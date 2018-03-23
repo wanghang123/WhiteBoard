@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/popup_show_bg">
+
+    <!-- top -->
+    <RelativeLayout
+        android:id="@+id/scan_share_top"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <!-- 左边UI -->
+        <RelativeLayout
+            android:id="@+id/rl_menu_back"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_stroke_click_bg"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/iv_menu_back"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/btn_left_arrow"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_menu_back"
+                android:text="@string/back"/>
+        </RelativeLayout>
+
+        <!-- 右边UI:显示switch按钮 -->
+        <RelativeLayout
+            android:id="@+id/rl_show_switch_ui"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            >
+
+            <com.yinghe.whiteboardlib.ui.SlideButton
+                android:id="@+id/switch_button"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/button_space_line"
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/switch_button"
+                android:background="@color/gray"/>
+
+            <!-- 加密提示 -->
+            <TextView
+                android:id="@+id/tv_encrypt_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/button_space_line"
+                android:text="@string/encrypt_tip"
+                android:textSize="10sp"
+                />
+
+            <!-- 显示密码 -->
+            <RelativeLayout
+                android:id="@+id/rl_show_encrypt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/button_space_line"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/doc_encrypt_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:text="@string/doc_encrypt_text"/>
+
+                <ImageView
+                    android:id="@+id/btn_edit_encrypt"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/doc_encrypt_text"
+                    android:background="@drawable/btn_stroke_click_bg"
+                    android:src="@mipmap/btn_edit_encrypt"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- 右边UI:显示密码编辑 -->
+        <RelativeLayout
+            android:id="@+id/rl_show_edit_encrypt_ui"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:visibility="invisible"
+            >
+
+            <TextView
+                android:id="@+id/edit_text_encrypt"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:maxLength="10"
+                android:hint="设置密码"
+                android:background="@null"
+                android:singleLine="true"
+                android:textSize="10sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- 分割线 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/scan_share_top"
+        android:background="@color/gray"/>
+
+    <!-- main -->
+    <RelativeLayout
+        android:id="@+id/scan_share_main"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        >
+
+        <!-- 加载条 -->
+        <ProgressBar
+            android:id="@+id/scan_create_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            style="?android:attr/progressBarStyleLarge"
+            />
+
+        <ImageView
+            android:id="@+id/scan_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/btn_scan_share"
+            />
+
+        <TextView
+            android:id="@+id/show_scan_image_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/menu_scan_share_tip"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

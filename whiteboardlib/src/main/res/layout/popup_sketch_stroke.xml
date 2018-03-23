@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/popup_show_bg"
+              android:orientation="vertical"
+              android:padding="@dimen/stroke_popup_layout_padding">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stroke_popup_pan_type_tip"
+        android:textSize="@dimen/stroke_popup_pan_tip_size"/>
+
+    <RadioGroup
+        android:id="@+id/stroke_type_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/stroke_type_rbtn_draw"
+            style="@style/stroke_color_btn"
+            android:button="@drawable/stroke_type_rbtn_draw"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/stroke_type_rbtn_line"
+            style="@style/stroke_color_btn"
+            android:button="@drawable/stroke_type_rbtn_line"/>
+
+        <RadioButton
+            android:id="@+id/stroke_type_rbtn_circle"
+            style="@style/stroke_color_btn"
+            android:button="@drawable/stroke_type_rbtn_circle"/>
+
+        <RadioButton
+            android:id="@+id/stroke_type_rbtn_rectangle"
+            style="@style/stroke_color_btn"
+            android:button="@drawable/stroke_type_rbtn_rectangle"/>
+
+        <RadioButton
+            android:id="@+id/stroke_type_rbtn_text"
+            style="@style/stroke_color_btn"
+            android:visibility="gone"
+            android:button="@drawable/stroke_type_rbtn_text"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stroke_popup_pan_size_tip"
+        android:textSize="@dimen/stroke_popup_pan_size_tip_size"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_stroke_circle"
+            android:layout_width="30dp"
+            android:layout_height="30dp">
+
+            <ImageView
+                android:id="@+id/stroke_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/stroke_color_rbtn_black"/>
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/stroke_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/rl_stroke_circle"
+            android:progressDrawable="@drawable/seekbar_define_color_style"
+            android:thumb="@drawable/seekbar_thumb"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stroke_popup_pan_color_tip"
+        android:textSize="@dimen/stroke_popup_pan_tip_size"/>
+
+    <RadioGroup
+        android:id="@+id/stroke_color_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/stroke_color_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/stroke_color_black"
+            style="@style/stroke_color_btn"
+            android:button="@drawable/stroke_circle_color_black_normal"/>
+
+        <RadioButton
+            android:id="@+id/stroke_color_red"
+            style="@style/stroke_color_btn"
+            android:button="@drawable/stroke_circle_color_red_normal"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/stroke_color_green"
+            style="@style/stroke_color_btn"
+            android:button="@drawable/stroke_circle_color_green_normal"/>
+
+        <RadioButton
+            android:id="@+id/stroke_color_orange"
+            style="@style/stroke_color_btn"
+            android:button="@drawable/stroke_circle_color_orange_normal"/>
+
+        <RadioButton
+            android:id="@+id/stroke_color_blue"
+            style="@style/stroke_color_btn"
+            android:button="@drawable/stroke_circle_color_blue_normal"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stroke_popup_pan_alpha_tip"
+        android:textSize="@dimen/stroke_popup_pan_tip_size"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_stroke_alpha_circle"
+            android:layout_width="30dp"
+            android:layout_height="30dp">
+
+            <ImageView
+                android:id="@+id/stroke_alpha_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/taiyang_1"/>
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/stroke_alpha_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/stroke_alpha_circle_2"
+            android:layout_toRightOf="@+id/rl_stroke_alpha_circle"
+            android:progressDrawable="@drawable/seekbar_define_color_style"
+            android:thumb="@drawable/seekbar_thumb"
+            />
+
+        <ImageView
+            android:id="@+id/stroke_alpha_circle_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/taiyang_2"/>
+    </RelativeLayout>
+
+</LinearLayout>

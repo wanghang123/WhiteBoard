@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">会议画板</string>
+
+    <string name="update_title">提示更新</string>
+    <string name="update_message">请升级到V%1$s，%2$s</string>
+    <string name="update_positive">更新</string>
+    <string name="update_negative">取消</string>
+
+    <!-- 升级信息 -->
+    <!-- 测试URL-->
+    <!--<string name="check_apk_url">http://192.168.2.75:82/device/upgrade</string>-->
+    <!-- 正式URL-->
+    <string name="check_apk_url">http://www.bqldb.com:82/device/upgrade</string>
+    <string name="apk_file_name">Whiteboard.apk</string>
+    <string name="apk_name">whiteboard</string>
+</resources>

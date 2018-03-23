@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <!-- 右边菜单 -->
+    <include
+        layout="@layout/btn_menu"
+        android:id="@+id/controlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        />
+
+    <!-- 绘图区域 -->
+    <include layout="@layout/draw_content_layout"
+             android:id="@+id/contentLayout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_above="@id/controlLayout"/>
+
+    <!-- 底部菜单栏 -->
+    <include
+        layout="@layout/right_menu"
+        android:id="@+id/rightMenuLayout"
+        android:layout_above="@id/controlLayout"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- 加载条 -->
+    <ProgressBar
+        android:id="@+id/large_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        style="?android:attr/progressBarStyleLarge"
+        />
+</RelativeLayout>

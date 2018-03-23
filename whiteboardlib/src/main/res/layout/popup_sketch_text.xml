@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_pupwindow_et"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="@string/text_popup_hint_tip"
+    android:imeOptions="actionDone"
+    android:maxWidth="@dimen/text_popup_max_width"
+    android:minWidth="@dimen/text_popup_mix_width"
+    android:background="@color/gray"
+    android:selectAllOnFocus="true"
+    android:textSize="@dimen/text_popup_text_size" />

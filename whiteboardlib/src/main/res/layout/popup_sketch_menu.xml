@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/popup_show_bg">
+    <!-- 默认菜单 -->
+    <include
+        layout="@layout/popup_sketch_menu_default"
+        android:id="@+id/menu_default"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <!-- 扫码菜单 -->
+    <include
+        layout="@layout/popup_sketch_menu_scan_share"
+        android:id="@+id/menu_sub_scan_share"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</FrameLayout>

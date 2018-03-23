@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">WhiteBoard</string>
+
+    <string name="folder_all">所有图片</string>
+    <string name="folder_first">背景素材</string>
+    <string name="sketch_count_alert">画板已达最大数量%1$s</string>
+
+    <string name="msg_no_camera">No system camera found</string>
+    <string name="msg_amount_limit">Select images amount is limit</string>
+    <string name="action_done">Done</string>
+    <string name="action_button_string">%1$s(%2$d/%3$d)</string>
+    <string name="photo_unit">Shot</string>
+    <string name="error_image_not_exist">Image error</string>
+    <string name="error_no_permission">Has no permission</string>
+    <string name="permission_dialog_title">Permission Deny</string>
+    <string name="permission_dialog_ok">OK</string>
+    <string name="permission_dialog_cancel">CANCEL</string>
+    <string name="permission_rationale_write_storage">Storage write permission is needed to save the image.</string>
+
+    <!-- menu菜单 -->
+    <string name="menu_select_photo">选择图片</string>
+    <string name="menu_change_bg">更换背景</string>
+    <string name="menu_select_video">选择视频</string>
+    <string name="menu_select_file">选择文件</string>
+    <string name="menu_save_record">保存记录</string>
+    <string name="menu_delete_record">删除记录</string>
+    <string name="menu_scan_share">扫码分享</string>
+    <string name="menu_exist">退出</string>
+
+    <string name="back">返回</string>
+    <string name="encrypt_tip">想要更安全？点击加密</string>
+
+    <string name="menu_scan_share_tip">扫码二维码，查看会议记录</string>
+    <string name="menu_create_error_tip">生成二维码失败!</string>
+    <string name="menu_upload_error_tip">上传文件失败!</string>
+    <string name="doc_encrypt_text">密码:%1$s</string>
+
+    <string name="pages_num_format">%1$s/%2$s</string>
+    <string name="pages_num">1/1</string>
+
+    <string name="tip_photo_path_error">图片文件路径有误！</string>
+    <string name="tip_install_file_manager">请安装文件管理器</string>
+    <string name="tip_is_empty_sketch">您还没有绘图</string>
+    <string name="tip_photo_load_error">图片加载失败,请重试!</string>
+    <string name="tip_video_select">请选择视频文件!</string>
+    <string name="tip_document_select">请选择文档(PPT/WORD/EXCEL/PDF)!</string>
+    <string name="tip_image_select">请选择图片(PNG/JPG)!</string>
+    <string name="tip_save_error">保存失败！</string>
+    <string name="tip_save_successfully">保存路径:%1$s</string>
+    <string name="tip_select_path_error">文件路径有误！</string>
+
+    <string name="tip_is_image_max">每个画板插入图片数量不能超出%1$s个！</string>
+
+    <string name="dialog_save_title">请输入保存文件名</string>
+    <string name="dialog_save_sure">确定</string>
+    <string name="dialog_save_cancel">取消</string>
+
+    <string name="dialog_ask_clear_all_title">清除画板内容?</string>
+
+    <string name="dialog_saving_title">保存画板</string>
+    <string name="dialog_saving_msg">保存中&#8230;</string>
+
+    <!-- 动态权限管理 -->
+    <string name="permission_request">权限要求</string>
+    <string name="permission_check">权限检查</string>
+    <string name="rationale_ask_again">如果没有请求的权限，这个应用程序可能无法正常工作。打开应用程序设置屏幕修改应用程序权限。</string>
+    <string name="rationale_battery">这个应用程序需要电池忽略设置。</string>
+    <string name="rationale_call">这个应用程序需要拨打电话权限。</string>
+    <string name="rationale_camera">这个应用程序需要开启拍照权限。</string>
+    <string name="rationale_record_audio">这个应用程序需要录音权限。</string>
+    <string name="rationale_sms">这个应用程序需要短信权限。</string>
+    <string name="rationale_storage">这个应用程序需要读写SD卡权限。</string>
+
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+
+    <!-- 画笔弹框  -->
+    <string name="stroke_popup_eraser_type_tip">橡皮擦类型</string>
+    <string name="eraser_size">橡皮擦大小</string>
+
+    <!-- 画笔弹框  -->
+    <string name="stroke_popup_pan_type_tip">画笔类型</string>
+    <string name="stroke_popup_pan_alpha_tip">不透明度</string>
+    <string name="stroke_popup_pan_size_tip">画笔大小</string>
+    <string name="stroke_popup_pan_color_tip">画笔颜色</string>
+
+    <!-- 文本弹框 -->
+    <string name="text_popup_hint_tip">请输入文字</string>
+
+    <!-- tab菜单 -->
+    <string name="tab_menu">菜单</string>
+    <string name="tab_stroke">画笔</string>
+    <string name="tab_eraser">橡皮</string>
+    <string name="tab_eraser_circle">圈擦</string>
+    <string name="tab_eraser_point">点擦</string>
+    <string name="tab_select">选择</string>
+    <string name="tab_stroke_move">迁移</string>
+    <string name="tab_undo">撤销</string>
+    <string name="tab_redo">恢复</string>
+    <string name="tab_save">保存</string>
+    <string name="tab_save_record">保存记录</string>
+    <string name="tab_add">添加</string>
+    <string name="tab_page_pre">上一页</string>
+    <string name="tab_page_show">画板</string>
+    <string name="tab_page_next">下一页</string>
+
+    <string name="tab_tv_tip">当前:%1$s</string>
+
+    <string name="network_error_tip">"网络连接异常，请检查网络。"</string>
+
+    <string name="fast_double_click_tip">亲，点击太频繁，屏幕快碎了!</string>
+    <string name="drawing_not_click_other_tip">绘图过程中，请勿点击其他按钮!</string>
+
+    <string name="tip_extend_select_rect">选取的区域超出范围。(选取的宽度最大值%1$spx,高度最大值为%2$spx)</string>
+
+    <string name="tip_save_file_not_null">文件名不能为空!</string>
+</resources>

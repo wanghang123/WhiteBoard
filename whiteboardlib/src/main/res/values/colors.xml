@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- main_app -->
+    <!-- 应用主色调 ：Green Peas -->
+    <color name="app_main_color">#FF89C35C</color>
+    <!-- 深应用主色调 -->
+    <color name="app_main_color_dark">#FF90C86C</color>
+    <!-- 半透明的应用主色 -->
+    <color name="semi_transparent_app_main_color">#d089C35C</color>
+    <!-- main light -->
+    <color name="app_main_color_light">#0089C35C</color>
+    <!-- 应用背景色 -->
+    <color name="app_background_color">#dddddddd</color>
+    <!-- 应用文字提示的颜色 -->
+    <color name="app_text_hint_color">#999999</color>
+    <!-- 半透明 -->
+    <color name="semi_transparent">#5a000000</color>
+    <!-- 地图围栏的填充色 -->
+    <color name="map_fences_fill">#33FFA07A</color>
+    <!-- 地图围栏的边线 -->
+    <color name="map_fences_stroke">#9FFF7256</color>
+    <!-- 轨迹连线的颜色 -->
+    <color name="map_track_line">#BFFF1056</color>
+
+    <integer-array name="app_colors">
+        <item>@color/app_main_color_dark</item>
+        <item>@color/semi_transparent_app_main_color</item>
+        <item>@color/app_main_color</item>
+        <item>@color/app_main_color_light</item>
+    </integer-array>
+
+    <color name="divider_color">#11000000</color>
+    <color name="msg_color">#FFFFFFFF</color>
+    <color name="btn_press_color">#66000000</color>
+    <color name="btn_unpress_color">#22000000</color>
+    <!-- 半透明的灰色 -->
+    <color name="semi_transparent_grey">#56666666</color>
+    <!-- 红色 -->
+    <color name="red">#FF0000</color>
+    <!-- 半透明的红色 -->
+    <color name="semi_transparent_red">#d0FF0000</color>
+    <color name="black">#000000</color>
+    <color name="light_grey">#D3D3D3</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="little_white">#F7F7F7</color>
+    <color name="dark">#000000</color>
+    <color name="grey">#666666</color>
+    <color name="dark_grey">#555555</color>
+    <color name="dark_gray">#a9a9a9</color>
+    <!-- 暗灰色 -->
+    <color name="dimgrey">#696969</color>
+    <!-- 雪白色 -->
+    <color name="floralwhite">#FFFAF0</color>
+    <!-- 桔黄色 -->
+    <color name="dark_oranger">#FF8C00</color>
+    <color name="blue">#0000FF</color>
+    <color name="medium_blue">#0000CD</color>
+    <color name="dark_blue">#00008B</color>
+    <color name="navy_blue">#000080</color>
+    <color name="royal_blue">#4169E1</color>
+    <color name="cornflower_blue">#6495ED</color>
+    <color name="steel_blue">#4682B4</color>
+    <color name="light_sky_blue">#87CEFA</color>
+    <color name="sky_blue">#87CEEB</color>
+    <color name="deep_sky_blue">#00BFFF</color>
+    <color name="light_blue">#ADD8E6</color>
+    <color name="frame_select">#728ea3</color>
+    <color name="frame_normal">#BDC7D8</color>
+    <color name="border">#728ea3</color>
+    <color name="transparent_white">#00FFFFFF</color>
+    <color name="subtransparent_dark">#33000000</color>
+    <color name="subtransparent_dark2">#11000000</color>
+    <color name="subtransparent_dark3">#66000000</color>
+    <color name="subtransparent_bule">#334682B4</color>
+    <color name="subtransparent_white">#33FFFFFF</color>
+    <color name="tools_box_bg">#ff333332</color>
+    <color name="text_white_shadow_color">#ff5a9487</color>
+    <color name="bgColor">#B9BEC3</color>
+    <color name="yellow">#FBD34D</color>
+    <color name="slide_menu_highlignt">#3F3D3A</color>
+    <color name="bottom_bar_grey">#f9f9f9</color>
+    <color name="text_grey">#aaaaaa</color>
+    <color name="set_grey">#F5F5F5</color>
+    <color name="topColor">#4BCDA2</color>
+    <color name="lightgrey">#EBECED</color>
+    <color name="add_button_nomral">#A1E3BB</color>
+    <color name="add_button_press">#03903B</color>
+    <color name="main_color">#4bcda2</color>
+    <color name="list_divider_gray">#ededed</color>
+    <color name="red_btn_normal">#ff3c1f</color>
+    <color name="red_btn_press">#ff7256</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_deep">#92BF4A</color>
+    <color name="set_title_color">#FBF8F1</color>
+    <color name="set_txt_color">#543541</color>
+    <color name="set_txt_color_light">#52394F</color>
+    <!-- Dorothy add begin, 2015/08/12 -->
+    <color name="bg_deep_color">#92BF4A</color>
+    <color name="bg_light_color">#ffffff</color>
+    <color name="input_bg_border_color">#92BF4A</color>
+    <color name="bt_red_color">#ff0000</color>
+    <color name="bt_green_color">#92BF4A</color>
+    <color name="transparent">#00000000</color>
+    <color name="light_green">#ffffcc</color>
+    <color name="dark_green">#92BF4A</color>
+    <color name="set_dividing_line_color">#E6E6E6</color>
+    <color name="set_phone_bg_color">#E6E6E6</color>
+    <color name="save_btn_red">#E9483D</color>
+    <color name="select_color">#FFE4CA</color>
+
+    <!-- Dorothy add end, 2015/08/12 -->
+    <item name="gray_drawable" type="drawable">#FF92BF4A</item>
+
+    <color name="disable_bg_color">#56666666</color>
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="button_ensure">#ff6000</color>
+
+    <color name="cutting_line">#dfdfdf</color>
+
+    <color name="orange">#FF8111</color>
+    <color name="wheel_unselect_text">#c2c1c1</color>
+    <color name="wheel_bg">#f2f2f2</color>
+
+
+
+    <color name="gray">#eeeeee</color>
+    <color name="com_bg_gray">#aaaaaaaa</color>
+
+    <color name="draw_content_layout_bg">#efeded</color>
+
+
+    <color name="image_selector_bg">#181819</color>
+
+    <color name="sketch_bg">#782452cc</color>
+    <color name="btn_menu_bg">#cecece</color>
+    <color name="text_gray">#707070</color>
+    <color name="text_default">#333333</color>
+
+    <color name="sketch_bg_gray">#0a2538</color>
+</resources>

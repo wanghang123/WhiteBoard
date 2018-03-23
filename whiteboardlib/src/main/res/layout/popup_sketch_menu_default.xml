@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:padding="5dp">
+
+    <!-- 第一行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="0dp"
+        android:padding="5dp">
+        <!-- 图片 -->
+        <LinearLayout
+            android:id="@+id/menu_btn_select_photo"
+            style="@style/menu_btn">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/menu_imageview_margin"
+                android:src="@mipmap/btn_select_image"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/menu_select_photo"/>
+        </LinearLayout>
+
+        <!-- 文件 -->
+        <LinearLayout
+            android:id="@+id/menu_btn_select_file"
+            style="@style/menu_btn">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/menu_imageview_margin"
+                android:src="@mipmap/btn_select_doc"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/menu_select_file"/>
+        </LinearLayout>
+
+        <!-- 视频 -->
+        <LinearLayout
+            android:id="@+id/menu_btn_select_video"
+            style="@style/menu_btn"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/menu_imageview_margin"
+                android:src="@mipmap/btn_select_video"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/menu_select_video"/>
+        </LinearLayout>
+
+        <!-- 背景 -->
+        <LinearLayout
+            android:id="@+id/menu_btn_select_bg"
+            style="@style/menu_btn">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/menu_imageview_margin"
+                android:src="@mipmap/btn_select_bg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/menu_change_bg"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 第二行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="0dp"
+        android:padding="5dp">
+
+        <!-- 保存 -->
+        <LinearLayout
+            android:id="@+id/menu_btn_save"
+            style="@style/menu_btn">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/menu_imageview_margin"
+                android:src="@mipmap/btn_save"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/tab_save_record"/>
+        </LinearLayout>
+
+        <!-- 分享 -->
+        <LinearLayout
+            android:id="@+id/menu_btn_scan_share"
+            style="@style/menu_btn">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/menu_imageview_margin"
+                android:src="@mipmap/btn_scan_share"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/menu_scan_share"/>
+        </LinearLayout>
+
+        <!-- 退出 -->
+        <LinearLayout
+            android:id="@+id/menu_btn_exist"
+            style="@style/menu_btn">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/menu_imageview_margin"
+                android:src="@mipmap/btn_exist"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/menu_exist"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

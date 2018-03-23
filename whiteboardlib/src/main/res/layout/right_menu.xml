@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/right_menu_btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_stroke_click_bg"
+        android:src="@mipmap/btn_add"/>
+
+    <ImageView
+        android:id="@+id/right_menu_btn_delete"
+        android:background="@drawable/btn_stroke_click_bg"
+        android:layout_below="@+id/right_menu_btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/btn_clear"/>
+</RelativeLayout>

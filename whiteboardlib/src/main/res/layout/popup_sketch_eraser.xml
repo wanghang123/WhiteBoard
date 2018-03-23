@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/popup_show_bg"
+              android:minWidth="@dimen/eraser_layout_min_width"
+              android:orientation="vertical"
+              android:padding="@dimen/eraser_layout_padding">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/stroke_popup_eraser_type_tip"
+            android:textSize="@dimen/stroke_popup_pan_tip_size"/>
+
+        <!-- 圈选橡皮擦 -->
+        <RelativeLayout
+            android:id="@+id/rl_btn_eraser_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_click_shape_bg"
+            android:clickable="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/btn_eraser_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/btn_eraser_circle"/>
+        </RelativeLayout>
+
+        <!-- 点迹皮擦 -->
+        <RelativeLayout
+            android:id="@+id/rl_btn_eraser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_stroke_click_bg"
+            android:clickable="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/rl_btn_eraser_circle">
+
+            <ImageView
+                android:id="@+id/btn_eraser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/btn_eraser"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/eraser_size_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="@string/eraser_size"
+        android:textSize="@dimen/eraser_size"/>
+
+    <!-- 橡皮擦大小 -->
+    <RelativeLayout
+        android:id="@+id/rl_erase_size_change"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="invisible"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_stroke_circle"
+            android:layout_width="30dp"
+            android:layout_height="30dp">
+
+            <ImageView
+                android:id="@+id/stroke_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/stroke_color_rbtn_black"/>
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/stroke_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/rl_stroke_circle"
+            android:progressDrawable="@drawable/seekbar_define_color_style"
+            android:thumb="@drawable/seekbar_thumb"/>
+    </RelativeLayout>
+
+</LinearLayout>

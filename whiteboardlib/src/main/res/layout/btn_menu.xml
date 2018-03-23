@@ -1,0 +1,215 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/btn_menu_bg"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/control_btn_padding"
+                android:paddingLeft="@dimen/control_layout_padding"
+                android:paddingRight="@dimen/control_layout_padding"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/control_btn_padding">
+
+    <!--菜单按钮-->
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_menu"
+            android:clickable="true"
+            style="@style/control_btn">
+            <ImageView
+                android:id="@+id/btn_menu"
+                style="@style/tab_btn_image"
+                android:src="@mipmap/btn_menu"/>
+            <TextView
+                android:layout_below="@+id/btn_menu"
+                style="@style/tab_btn_text"
+                android:text="@string/tab_menu"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 绘制操作 -->
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:id="@+id/ll_stroke_tools"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center">
+        <!-- 画笔 -->
+        <RelativeLayout
+            android:id="@+id/rl_stroke"
+            style="@style/control_btn">
+            <ImageView
+                android:id="@+id/btn_stroke"
+                style="@style/tab_btn_image"
+                android:src="@mipmap/btn_stroke"/>
+
+            <TextView
+                android:layout_below="@+id/btn_stroke"
+                android:id="@+id/tv_stroke"
+                style="@style/tab_btn_text"
+                android:text="@string/tab_stroke"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_drag"
+            android:visibility="visible"
+            style="@style/control_btn">
+            <ImageView
+                android:id="@+id/btn_drag"
+                style="@style/tab_btn_image"
+                android:src="@mipmap/btn_stroke_move"/>
+            <TextView
+                android:layout_below="@+id/btn_drag"
+                android:id="@+id/tv_drag"
+                style="@style/tab_btn_text"
+                android:text="@string/tab_stroke_move"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_eraser"
+            style="@style/control_btn">
+            <ImageView
+                android:id="@+id/btn_eraser"
+                style="@style/tab_btn_image"
+                android:src="@mipmap/btn_eraser_circle"/>
+
+            <TextView
+                android:layout_below="@+id/btn_eraser"
+                android:id="@+id/tv_eraser"
+                style="@style/tab_btn_text"
+                android:text="@string/tab_eraser_circle"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!--撤销和回退操作-->
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sketch_gv_padding"
+        android:layout_toRightOf="@id/ll_stroke_tools">
+
+        <RelativeLayout
+            android:clickable="true"
+            android:id="@+id/rl_undo"
+            android:visibility="visible"
+            android:alpha="0.4"
+            style="@style/control_btn">
+            <ImageView
+                android:id="@+id/btn_undo"
+                style="@style/tab_btn_image"
+                android:src="@mipmap/btn_undo"/>
+            <TextView
+                android:layout_below="@+id/btn_undo"
+                android:id="@+id/tv_undo"
+                style="@style/tab_btn_text"
+                android:text="@string/tab_undo"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:clickable="true"
+            android:id="@+id/rl_redo"
+            android:visibility="visible"
+            android:alpha="0.4"
+            style="@style/control_btn">
+            <ImageView
+                android:id="@+id/btn_redo"
+                style="@style/tab_btn_image"
+                android:src="@mipmap/btn_redo"/>
+            <TextView
+                android:layout_below="@+id/btn_redo"
+                android:id="@+id/tv_redo"
+                style="@style/tab_btn_text"
+                android:text="@string/tab_redo"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 页面操作 -->
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ll_stroke_tools"
+        android:layout_alignParentEnd="true">
+
+        <!-- 上一页 -->
+        <RelativeLayout
+            android:clickable="true"
+            android:id="@+id/rl_page_prev"
+            style="@style/control_btn">
+            <ImageView
+                android:id="@+id/btn_page_prev"
+                style="@style/tab_btn_image"
+                android:src="@mipmap/btn_page_prev"/>
+
+            <TextView
+                android:layout_below="@+id/btn_page_prev"
+                android:id="@+id/tv_page_prev"
+                style="@style/tab_btn_text"
+                android:text="@string/tab_page_pre"/>
+        </RelativeLayout>
+
+        <!-- 显示页面 -->
+        <RelativeLayout
+            android:clickable="true"
+            android:id="@+id/rl_pages_show"
+            style="@style/control_btn">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/rl_btn_pages_show">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/btn_pages_num"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/imageView"/>
+                <TextView
+                    android:id="@+id/tv_page_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="3dp"
+                    android:paddingRight="3dp"
+                    android:text="1"
+                    android:textSize="10sp"
+                    android:textColor="@android:color/white"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_below="@+id/rl_btn_pages_show"
+                android:id="@+id/tv_pages_show"
+                style="@style/tab_btn_text"
+                android:text="@string/tab_page_show"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <!-- 下一页 -->
+        <RelativeLayout
+            android:clickable="true"
+            android:id="@+id/rl_page_next"
+            style="@style/control_btn">
+            <ImageView
+                android:id="@+id/btn_page_next"
+                style="@style/tab_btn_image"
+                android:src="@mipmap/btn_page_next"/>
+
+            <TextView
+                android:layout_below="@+id/btn_page_next"
+                android:id="@+id/tv_page_next"
+                style="@style/tab_btn_text"
+                android:text="@string/tab_page_next"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
